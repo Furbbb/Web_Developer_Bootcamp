@@ -1,0 +1,69 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <script src="script.js"></script>
+
+    <title>Registration Page</title>
+</head>
+
+<body>
+
+    <h1>Register</h1>
+
+    <form>
+        <div>
+            <label for="firstName">First Name:</label>
+            <input id="firstName" type="text" placeholder="John" required>
+            <label for="lastName">Last Name:</label>
+            <input id="lastName" type="text" placeholder="Smith" required>
+        </div>
+        <div>
+            <label for="maleGender">Male</label>
+            <input name="genderChoice" id="maleGender" type="radio" value="MALE">
+            <label for="femaleGender">Female</label>
+            <input name="genderChoice" id="femaleGender" type="radio" value="FEMALE">
+            <label for="otherGender">Other</label>
+            <input name="genderChoice" id="otherGender" type="radio" value="OTHER">
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input id="email" type="email" placeholder="Your Email" required>
+            <label for="password">Password:</label>
+            <input id="password" type="password" placeholder="Your Password" minlength="5" maxlength="10" required>
+        </div>
+        <div>
+            <label for="month">Birthday:</label>
+            <select name="Month">
+                <option>Please Select an option</option>
+                <option>January</option>
+                <option>February</option>
+                <option>March</option>
+            </select>
+            <select name="Day">
+                <option>Please Select an option</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+            </select>
+            <select name="Year">
+                <option>Please Select an option</option>
+                <option>2000</option>
+                <option>2001</option>
+                <option>2002</option>
+            </select>
+        </div>
+        <div>
+            <label for="agreement">I agree to the terms and conditions</label>
+            <input id="agreement" type="checkbox" required>
+        </div>
+        <div>
+            <input type="submit">
+        </div>
+    </form>
+</body>
+
+</html>

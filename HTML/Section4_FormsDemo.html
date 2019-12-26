@@ -1,0 +1,68 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <script src="script.js"></script>
+
+    <title>Form Demo</title>
+</head>
+
+<body>
+
+    <h1>Login</h1>
+
+    <!-- action = Where the form send data to -->
+    <!-- method = What HTTP method (get/post) -->
+
+    <!-- First syntax method for labels -->
+    <form action="http://www.wikipedia.org" method="GET">
+        <label>
+            Email: 
+            <input type="email" placeholder="Email" required>
+        </label>
+        <label>
+            Password: 
+            <input type="password" placeholder="Password" required>
+        </label>
+        <input type="submit">
+    </form>
+
+    <!-- Second syntax method for labels -->
+    <form action ="http://www.wikipedia.org" method="GET">
+        <label for="email">Email:</label>
+        <input id="email" type="email" placeholder="Email" required>
+        <label for="password">Password:</label>
+        <input id="password" type="password" placeholder="Password" required>
+        <input type="submit">
+    </form>
+
+    <!-- <input type="color">
+    <input type="radio"> -->
+
+    <form>
+        <label for="dogs">Dogs: </label>
+        <!-- The values attribute is the return value sent to wherever -->
+        <input name="petChoice" id="dogs" type="radio" value="DOGS"> 
+
+        <label for="cats">Cats: </label>
+        <input name="petChoice" id="cats" type="radio" value="CATS">
+
+        <!-- Select makes a dropdown menu -->
+        <p>What's your current mood?</p>
+        <select name="Mood">
+            <option value="Happy">:)</option>
+            <option value="Meh">:|</option>
+            <option value="Sad">:(</option>
+        </select>
+
+        <textarea name="TextArea" rows="20" cols="50">Write something here</textarea>
+
+        <!-- If the button is the last thing in the form, it will act as a submit -->
+        <button>Go!</button>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+/* selector {
+    property: value;
+} */
+body {
+    /* background: url(https://cdn.shopify.com/s/files/1/0254/2381/products/IMG_5541.jpg?v=1474299464);
+    background-repeat: no-repeat;
+    background-size: cover; */
+    background: pink;
+}
+h1 {
+    color: #3D569C;
+    /* border-color: purple;
+    border-width: 5px;
+    border-style: solid; */
+    border: 5px solid purple;
+}
+li {
+    color: #FAD82F;
+}
+h3 {
+    color: #E2E1D9;
+    background: rgb(255,100,80);
+}
+h4 {
+    color: rgb(0,255,240);
+}
+h5 {
+    color: rgba(11,99,150,1);
+}
+
+/* In rgba, the fourth value is the transperency */

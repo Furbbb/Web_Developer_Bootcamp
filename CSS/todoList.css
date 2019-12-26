@@ -1,0 +1,12 @@
+body {
+    background: pink;
+}
+
+#liOne {
+    background: yellow;
+}
+
+.testClass {
+    background: blue;
+    text-decoration: line-through;
+}
