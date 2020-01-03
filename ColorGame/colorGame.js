@@ -18,8 +18,6 @@ function init() {
     numSquares = 6;
     //Sets the values for colors, pickedColor and changes the square colors
     resetStuff();
-    //Displays rgb string in h1
-    colorDisplay.textContent=colors[0];
     //Squares: Adds listeners
     setupSquares();
     //"NEW COLORS" button: Adds listeners
@@ -129,6 +127,8 @@ function resetStuff() {
     changeSquareColors();
     //Resets header to initial color
     h1.style.backgroundColor = "steelblue";
+    //Displays rgb string in h1
+    colorDisplay.textContent=pickedColor;
     //Resets messages to null
     message.textContent=null;
     //Resets Reset Button Message
